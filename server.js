@@ -25,6 +25,8 @@ app.use(cors());
 app.use(express.json());
 
 
+app.get('/', (req, res) => { res.send(`WE'RE ONLINE!`) } );
+
 app.post('/login', (req, res) => { login.handleLogin (req, res, db, bcrypt) });
 
 app.post('/register', (req, res) => { register.handleRegister(req, res, db, bcrypt) });
