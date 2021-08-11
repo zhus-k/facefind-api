@@ -13,7 +13,7 @@ const app = express();
 const db = knex({
     client: 'postgres',
     connection: {
-        host : process.env.DATABASE_URL,
+        connectionString : process.env.DATABASE_URL,
         ssl: true
     }
 });
