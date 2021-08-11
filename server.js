@@ -1,12 +1,12 @@
-import express from 'express';
-import bcrypt from 'bcrypt';
-import cors from 'cors';
-import knex from 'knex';
+const express  = require('express');
+const bcrypt  = require('bcrypt');
+const cors  = require('cors');
+const knex  = require('knex');
 
-import register from './controllers/register';
-import login from './controllers/login';
-import profile from './controllers/profile';
-import image from './controllers/image';
+const register = require('./controllers/register.js');
+const login = require('./controllers/login.js');
+const profile = require('./controllers/profile.js');
+const image = require('./controllers/image.js');
 
 const app = express();
 
